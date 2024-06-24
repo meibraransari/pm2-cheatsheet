@@ -4,24 +4,24 @@ pm2 monit
 ```
 # Fork mode
 ```
-pm2 start app.js --name my-api	Start and name a process
+pm2 start app.js --name my-api	# Start and name a process
 ```
 # Cluster mode
 ```
-pm2 start app.js -i 0	Will start maximum processes with LB depending on available CPUs
+pm2 start app.js -i 0	# Will start maximum processes with LB depending on available CPUs
 ```
 # Listing
 ```
-pm2 list	Display all processes status
-pm2 jlist	Print process list in raw JSON
-pm2 prettylist	Print process list in beautified JSON
-pm2 describe 0	Display all information about a specific process
+pm2 list	#Display all processes status
+pm2 jlist	#Print process list in raw JSON
+pm2 prettylist	#Print process list in beautified JSON
+pm2 describe 0	#Display all information about a specific process
 ```
 # Logs
 ```
-pm2 logs [--raw]	Display all processes logs in streaming
-pm2 flush	Empty all log files
-pm2 reloadLogs	Reload all logs
+pm2 logs [--raw]	#Display all processes logs in streaming
+pm2 flush	#Empty all log files
+pm2 reloadLogs	#Reload all logs
 ```
 # Actions
 ```
