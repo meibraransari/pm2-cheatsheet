@@ -1,18 +1,27 @@
 # Fork mode
+```
 pm2 start app.js --name my-api	Start and name a process
+```
 # Cluster mode
+```
 pm2 start app.js -i 0	Will start maximum processes with LB depending on available CPUs
+```
 # Listing
+```
 pm2 list	Display all processes status
 pm2 jlist	Print process list in raw JSON
 pm2 prettylist	Print process list in beautified JSON
 pm2 describe 0	Display all information about a specific process
 pm2 monit	Monitor all processes
+```
 # Logs
+```
 pm2 logs [--raw]	Display all processes logs in streaming
 pm2 flush	Empty all log files
 pm2 reloadLogs	Reload all logs
+```
 # Actions
+```
 pm2 stop all	Stop all processes
 pm2 restart all	Restart all processes
 pm2 reload all	Will 0s downtime reload (for NETWORKED apps)
@@ -23,7 +32,9 @@ pm2 delete all	Will remove all processes from pm2 list
 pm2 save	Save processes list to respawn at reboot
 pm2 reset	reset the restart counter
 pm2 reset all	reset all restart counters
+```
 # Misc
+```
 pm2 reset <process>	Reset meta data (restarted time…)
 pm2 updatePM2	Update in memory pm2
 pm2 ping	Ensure pm2 daemon has been launched
