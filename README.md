@@ -59,7 +59,7 @@ pm2 start app.json                # Start processes with options declared in app
 pm2 start app.js -e err.log -o out.log  # Start and specify error and out log
 pm2 --run-as-user foo start app.js  # Start app.js as user foo instead of the user that started pm2
 pm2 --run-as-user foo --run-as-group bar start app.js  # Start app.js as foo:bar instead of the user:group that started pm2
-
+```
 
 ### 💼 Connect with me 👇👇 😊
 
